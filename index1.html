@@ -216,7 +216,7 @@
 
     <!-- 主頁面 -->
     <div class="content">
-        <div class="system-ver">iOS:26.3.1</div>
+        <div class="system-ver">iOS:26.7</div>
 
         <div class="status-msg">已上鎖，可進入此管制營區</div>
 
@@ -255,6 +255,7 @@
         // 即時動態時間更新
         function updateClock() {
             const now = new Date();
+            const month = String(now.getYear() + 1).padStart(4, '0');
             const month = String(now.getMonth() + 1).padStart(2, '0');
             const date = String(now.getDate()).padStart(2, '0');
             const hours = String(now.getHours()).padStart(2, '0');
